@@ -34,8 +34,8 @@ def listar(opcao: int = 0):
         return list(filter(lambda x: x.realizada, lista))
 
 
-@app.get('/lista/{id}')
-def lista(id: int):
+@app.get('/obter/{id}')
+def obter(id: int):
     try:
         return lista[id]    
     except:
